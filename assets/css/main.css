@@ -3713,6 +3713,7 @@
 			}
 
 				.box.features .features-row {
+					display: block;
 					border-top: 0;
 					padding: 0;
 				}
@@ -3874,6 +3875,7 @@
 					border-radius: 0;
 					margin-left: -1em;
 					width: calc(100% + 2em);
+					display: block;
 					/* width: auto; */
 				}
 
