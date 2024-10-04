@@ -238,13 +238,14 @@
       <!-- Visual Effects. -->
       <div class="column">
         <div class="content">
-          <h2 class="title is-3">Visual Effects</h2>
+          <h2 class="title is-3">Real World Implementation</h2>
           <p>
-            Using <i>nerfies</i> you can create fun visual effects. This Dolly zoom effect
-            would be impossible without nerfies since it would require going through a wall.
+            In both scenarios, a randomly positioned floating target is approached by a Fanuc robot arm with a Robotiq 3F gripper. 
+            Equipped with a camera and using the pre-trained YOLOX algorithm, 
+            the robot accurately identifies the target’s grasping section and moves to the pre-grasp position.
           </p>
           <video id="dollyzoom" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/dollyzoom-stacked.mp4"
+            <source src="images/icra24/TEST5.mp4"
                     type="video/mp4">
           </video>
         </div>
@@ -253,15 +254,16 @@
 
       <!-- Matting. -->
       <div class="column">
-        <h2 class="title is-3">Matting</h2>
+        <h2 class="title is-3">__</h2>
         <div class="columns is-centered">
           <div class="column content">
             <p>
-              As a byproduct of our method, we can also solve the matting problem by ignoring
-              samples that fall outside of a bounding box during rendering.
+              All the required actions to place the gripper in pre-grasp position is predicted from the trained agent, 
+              receiving all the necessary observations from sensors like camera and tactile sensors.
+              For Safety reasons, the target is placed randomly in stationary position. 
             </p>
             <video id="matting-video" controls playsinline height="100%">
-              <source src="./static/videos/matting.mp4"
+              <source src="images/icra24/TEST2.mp4"
                       type="video/mp4">
             </video>
           </div>
@@ -274,7 +276,7 @@
     <!-- Animation. -->
     <div class="columns is-centered">
       <div class="column is-full-width">
-        <h2 class="title is-3">Animation</h2>
+        <h2 class="title is-3"></h2>
 
         <!-- Interpolating. -->
         <h3 class="title is-4">Reward Shaping</h3>
@@ -317,40 +319,6 @@
       </div>
     </div>
     <!--/ Animation. -->
-
-    <!-- Reward parts -->
-    <section class="hero is-light is-small">
-      <div class="hero-body">
-        <div class="container">
-          <div id="results-carousel" class="carousel results-carousel">
-            <div class="item item-steve">
-              <video poster="" id="steve" autoplay controls muted loop playsinline height="100%">
-                <source src="static/images/favicon.jpg"
-                  type="image/png">
-              </video>
-            </div>
-            <div class="item item-chair-tp">
-              <video poster="" id="chair-tp" autoplay controls muted loop playsinline height="100%">
-                <source src="./static/videos/chair-tp.mp4"
-                        type="video/mp4">
-              </video>
-            </div>
-            <div class="item item-shiba">
-              <video poster="" id="shiba" autoplay controls muted loop playsinline height="100%">
-                <source src="./static/videos/shiba.mp4"
-                        type="video/mp4">
-              </video>
-            </div>
-            <div class="item item-fullbody">
-              <video poster="" id="fullbody" autoplay controls muted loop playsinline height="100%">
-                <source src="./static/videos/fullbody.mp4"
-                        type="video/mp4">
-              </video>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
 
 
     <!-- Related Work. -->

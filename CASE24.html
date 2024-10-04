@@ -24,14 +24,14 @@
 
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
         rel="stylesheet">
-
+  <link rel="stylesheet" href="./static/css/index.css">
   <link rel="stylesheet" href="./static/css/bulma.min.css">
   <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
   <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
   <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
   <link rel="stylesheet"
         href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
-  <link rel="stylesheet" href="./static/css/index.css">
+  
   <link rel="icon" type="image/png" href="images/CASE24_logo.png">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -141,7 +141,7 @@
               </span>
               <!-- Code Link. -->
               <span class="link-block">
-                <a href="https://github.com/baha2r/Fanuc_Robotiq_Grasp"
+                <a href="https://github.com/baha2r/Soft_Capture_Tactile"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fab fa-github"></i>
@@ -167,8 +167,7 @@
     </div>
   </div>
 </section>
-
-<section class="hero teaser">
+<!-- <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
       <video id="teaser" autoplay muted loop playsinline height="100%">
@@ -182,8 +181,7 @@
       </h2>
     </div>
   </div>
-</section>
-
+</section> -->
 <section class="section">
   <div class="container is-max-desktop">
     <!-- Abstract. -->
@@ -209,6 +207,7 @@
              demonstrations or prior knowledge of the task. The developed control policy shows promising results, highlighting the necessity of using 
              tactile sensor information.
           </p>
+          <br/>
         </div>
       </div>
     </div>
@@ -217,11 +216,15 @@
     <!-- Paper image with explanation. -->
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
-        <h2 class="title is-3">Lab Setup</h2>
+        <h2 class="title is-3">Detailed Results</h2>
         <div class="publication-image">
-          <img src="images/Lab_connection.png" alt="Short description of the image" style="max-width:100%; height:auto;">
-          <p class="image-explanation">To test and implement our approach, we used a Fanuc LR Mate 20iD/25 robot arm with a Robotiq 3F gripper. 
-            The robot arm was equipped with a camera to detect the target object and a force-torque sensor to provide feedback to simulate zero gravity conditions.
+          <img src="images/case24/case24_detail_result.png" alt="Short description of the image" style="max-width:150%; height:auto; margin-left: -25%;">
+          <p class="image-explanation">To evaluate the effectiveness of tactile feedback in the soft-capture phase, we conducted a series of experiments 
+            in a simulated environment. The robot was tasked with pre-capturing a moving free-floating target using a Robotiq 3F gripper.The robot was trained 
+            using the Soft Actor-Critic algorithm in a simulated environment. The results show that the robot's performance significantly improved 
+            when tactile feedback was enabled. The robot was able to avoid collisions and position itself correctly for the soft-capture phase. 
+            The results demonstrate the importance of tactile feedback in improving the success rate of the soft-capture phase in space debris removal missions.
+            Episode (A) shows the robot's behavior with tactile feedback enabled, while episode (B) shows the robot's behavior without tactile feedback.
           </p>
         </div>
       </div>
@@ -235,10 +238,10 @@
 <section class="section">
   <div class="container is-max-desktop">
 
-    <div class="columns is-centered">
+    <!-- <div class="columns is-centered"> -->
 
       <!-- Visual Effects. -->
-      <div class="column">
+      <!-- <div class="column">
         <div class="content">
           <h2 class="title is-3">Visual Effects</h2>
           <p>
@@ -250,11 +253,11 @@
                     type="video/mp4">
           </video>
         </div>
-      </div>
+      </div> -->
       <!--/ Visual Effects. -->
 
       <!-- Matting. -->
-      <div class="column">
+      <!-- <div class="column">
         <h2 class="title is-3">Matting</h2>
         <div class="columns is-centered">
           <div class="column content">
@@ -270,15 +273,66 @@
 
         </div>
       </div>
-    </div>
+    </div> -->
     <!--/ Matting. -->
 
-    <!-- Animation. -->
-    <div class="columns is-centered">
-      <div class="column is-full-width">
-        <h2 class="title is-3">Animation</h2>
+    <!-- scrolling vids -->
+    <section class="hero is-light is-small">
+      <div class="hero-body">
+        <div class="container">
+          <div class="content has-text-justified">
+            <p>
+              Six different videos showing the robot's behavior after training. Some is equipped with tactile feedback, while others are not. 
+              The importance of tactile feedback is evident in the robot's behavior to avoid collisions and position itself correctly for the soft-capture phase.
+            </p>
+          </div>
+          <div id="results-carousel" class="carousel results-carousel">
+            <div class="item item-steve">
+              <video poster="" id="steve" autoplay controls muted loop playsinline height="100%">
+                <source src="images/case24/w_tactile_1.mp4" type="video/mp4">
+              </video>
+              <p class="video-description">Tactile feedback enabled - Example 1</p>
+            </div>
+            <div class="item item-chair-tp">
+              <video poster="" id="chair-tp" autoplay controls muted loop playsinline height="100%">
+                <source src="images/case24/wo_tactile_5.mp4" type="video/mp4">
+              </video>
+              <p class="video-description">No tactile feedback - Example 2</p>
+            </div>
+            <div class="item item-shiba">
+              <video poster="" id="shiba" autoplay controls muted loop playsinline height="100%">
+                <source src="images/case24/w_tactile_3.mp4" type="video/mp4">
+              </video>
+              <p class="video-description">Tactile feedback enabled - Example 3</p>
+            </div>
+            <div class="item item-fullbody">
+              <video poster="" id="fullbody" autoplay controls muted loop playsinline height="100%">
+                <source src="images/case24/wo_tactile_7.mp4" type="video/mp4">
+              </video>
+              <p class="video-description">No tactile feedback - Example 4</p>
+            </div>
+            <div class="item item-fullbody">
+              <video poster="" id="fullbody" autoplay controls muted loop playsinline height="100%">
+                <source src="images/case24/w_tactile_5.mp4" type="video/mp4">
+              </video>
+              <p class="video-description">Tactile feedback enabled - Example 5</p>
+            </div>
+            <div class="item item-fullbody">
+              <video poster="" id="fullbody" autoplay controls muted loop playsinline height="100%">
+                <source src="images/case24/wo_tactile_8.mp4" type="video/mp4">
+              </video>
+              <p class="video-description">No tactile feedback - Example 6</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-        <!-- Interpolating. -->
+     <!-- Reward parts. -->
+     <div class="columns is-centered">
+      <div class="column is-full-width">
+        <br/>
+        <!-- <h2 class="title is-3"></h2> -->
         <h3 class="title is-4">Reward Shaping</h3>
         <div class="content has-text-justified">
           <p>
@@ -314,52 +368,14 @@
           </div>
         </div>
         <br/>
-        <!--/ Interpolating. -->
-
       </div>
     </div>
-    <!--/ Animation. -->
-
-    <!-- Reward parts -->
-    <section class="hero is-light is-small">
-      <div class="hero-body">
-        <div class="container">
-          <div id="results-carousel" class="carousel results-carousel">
-            <div class="item item-steve">
-              <video poster="" id="steve" autoplay controls muted loop playsinline height="100%">
-                <source src="static/images/favicon.jpg"
-                  type="image/png">
-              </video>
-            </div>
-            <div class="item item-chair-tp">
-              <video poster="" id="chair-tp" autoplay controls muted loop playsinline height="100%">
-                <source src="./static/videos/chair-tp.mp4"
-                        type="video/mp4">
-              </video>
-            </div>
-            <div class="item item-shiba">
-              <video poster="" id="shiba" autoplay controls muted loop playsinline height="100%">
-                <source src="./static/videos/shiba.mp4"
-                        type="video/mp4">
-              </video>
-            </div>
-            <div class="item item-fullbody">
-              <video poster="" id="fullbody" autoplay controls muted loop playsinline height="100%">
-                <source src="./static/videos/fullbody.mp4"
-                        type="video/mp4">
-              </video>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
+    <!--/ Reward parts. -->
 
     <!-- Related Work. -->
     <div class="columns is-centered">
       <div class="column is-full-width">
         <h2 class="title is-3">Related Links</h2>
-
         <div class="content has-text-justified">
           <p>
             There's a lot of excellent work that was introduced around the same time as ours.
