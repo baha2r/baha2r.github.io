@@ -3719,11 +3719,12 @@
 
 					.box.features .features-row section {
 						border: 0;
-						border-top: solid 1px #e5e5e5 !important;
+						/* border-top: solid 1px #e5e5e5 !important; */
+						border-top: 0;
 						float: none;
-						margin: 2em 0 0 0 !important;
-						padding: 2em 0 0 0 !important;
-						width: 50%;
+						margin: 0em 0 0 0 !important;
+						padding: 0em 0 0 0 !important;
+						width: 100%;
 					}
 
 					.box.features .features-row:first-child section:first-child {
@@ -3872,8 +3873,8 @@
 				.box .image.featured {
 					border-radius: 0;
 					margin-left: -1em;
-					/* width: calc(100% + 2em);*/
-					width: auto;
+					width: calc(100% + 2em);
+					/* width: auto; */
 				}
 
 					.box .image.featured img {
