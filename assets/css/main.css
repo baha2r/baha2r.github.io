@@ -337,10 +337,13 @@
 
 		.row > .col-6 {
 			width: 50%;
+			/* height: 1200px;
+			object-fit:contain; */
 		}
 
 		.row > .off-6 {
 			margin-left: 50%;
+			
 		}
 
 		.row > .col-7 {
