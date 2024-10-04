@@ -3726,6 +3726,7 @@
 						margin: 0em 0 0 0 !important;
 						padding: 0em 0 0 0 !important;
 						width: 100%;
+						display: block;
 					}
 
 					.box.features .features-row:first-child section:first-child {
