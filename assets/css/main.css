@@ -2247,6 +2247,7 @@
 		opacity: 1.0;
 	}
 
+
 /* Box */
 
 	.box {
@@ -2270,44 +2271,55 @@
 		}
 
 		.box.features .features-row {
-			border-top: solid 2px #e5e5e5;
-			position: relative;
+			display: flex;
+			align-items: stretch;
+			justify-content: space-between;
+			border-top: solid 10px #e5e5e5;
+
 		}
 
-			.box.features .features-row:after {
-				clear: both;
-				content: '';
-				display: block;
-			}
-
-			.box.features .features-row section {
-				float: left;
-				padding: 3em;
-				width: 50%;
-			}
-
-				.box.features .features-row section :last-child {
-					margin-bottom: 0;
-				}
-
-				.box.features .features-row section:nth-child(2n) {
-					padding-right: 0;
-				}
-
-					.box.features .features-row section:nth-child(2n):before {
-						background: #e5e5e5;
-						content: '';
-						display: block;
-						height: 100%;
-						margin-left: -3em;
-						position: absolute;
-						top: 0;
-						width: 2px;
-					}
-
-				.box.features .features-row section:nth-child(2n-1) {
-					padding-left: 0;
-				}
+		.box.features .features-row .icon {
+			/* background: #e5e5e5; */
+			border-radius: 100%;
+			/* color: #ffffff; */
+			display: inline-block;
+			/* font-size: 1.5em; */
+			height: 3em;
+			line-height: 3em;
+			margin: 0 0 0 0;
+			/* text-align: center; */
+			width: 3em;
+		}
+		
+		.box.features .features-row section {
+			flex: 1;
+			padding: 1em; /* Reduce padding for smaller row height */
+			position: relative;
+			box-sizing: border-box;			
+		}
+		
+		.box.features .features-row section:before {
+			background: #e5e5e5;
+			content: '';
+			display: block;
+			height: 100%;
+			position: absolute;
+			top: 0;
+			width: 10px;
+			margin-left: -1.5em; /* Add margin for correct positioning */
+		}
+		
+		.box.features .features-row section:nth-child(2n+1):before {
+			margin-left: -1.5em; /*Add margin for correct positioning */
+		}
+		
+		.box.features .features-row section:first-child:before {
+			display: none; /* No border for the first column */
+		}
+		
+		.box.features .features-row section:last-child {
+			padding-right: 0em; /* Adjust padding for last column */
+		}
 
 			.box.features .features-row:first-child {
 				border-top: 0;
@@ -2335,7 +2347,7 @@
 			margin: 3em 0 3em -3em;
 			position: relative;
 			width: calc(100% + 6em);
-		}
+			}
 
 			.box .image.featured img {
 				border-radius: 0;
