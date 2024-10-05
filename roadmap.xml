@@ -44,9 +44,9 @@
     </url> -->
 
     <video:video>
-        <video:thumbnail_loc>https://baha2r.github.io/images/robotiq3f_py.png</video:thumbnail_loc>
-        <video:title>robotiq3f_py</video:title>
-        <video:description>Python package for Robotiq 3F gripper</video:description>
+        <video:thumbnail_loc>https://baha2r.github.io/images/Lab_connection.png</video:thumbnail_loc>
+        <video:title>York University Robotics Lab</video:title>
+        <video:description>Robotics Lab setup at York University Two industrial robots, Fanuc m2id, are connected to a computer and controlled by python</video:description>
         <video:content_loc>
     </video:video>
 
