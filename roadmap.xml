@@ -28,6 +28,15 @@
         <lastmod>2024-10-04</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
+
+
+        <video:video>
+            <video:thumbnail_loc>https://baha2r.github.io/images/Lab_connection.png</video:thumbnail_loc>
+            <video:title>York University Robotics Lab</video:title>
+            <video:description>Robotics Lab setup at York University Two industrial robots, Fanuc m2id, are connected to a computer and controlled by python</video:description>
+            <video:content_loc>https://baha2r.github.io/images/Lab_connection.png</video:content_loc>
+        </video:video>
+
     </url>
 
     <url>
@@ -35,6 +44,14 @@
         <lastmod>2024-10-04</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
+
+        <video:video>
+            <video:thumbnail_loc>https://baha2r.github.io/images/case24/w_tactile_1.mp4</video:thumbnail_loc>
+            <video:title>Case24 results Bahador Beigomi</video:title>
+            <video:description>Case24 results Bahador Beigomi reinforcement learning with tactile sensing</video:description>
+            <video:content_loc>https://baha2r.github.io/images/case24/w_tactile_1.mp4</video:content_loc>
+        </video:video>
+        
     </url>
 
     <!-- <url>
@@ -44,18 +61,8 @@
         <priority>0.7</priority>
     </url> -->
 
-    <video:video>
-        <video:thumbnail_loc>https://baha2r.github.io/images/Lab_connection.png</video:thumbnail_loc>
-        <video:title>York University Robotics Lab</video:title>
-        <video:description>Robotics Lab setup at York University Two industrial robots, Fanuc m2id, are connected to a computer and controlled by python</video:description>
-        <video:content_loc>https://baha2r.github.io/images/Lab_connection.png</video:content_loc>
-    </video:video>
+    
 
-    <video:video>
-        <video:thumbnail_loc>https://baha2r.github.io/images/case24/w_tactile_1.mp4</video:thumbnail_loc>
-        <video:title>Case24 results Bahador Beigomi</video:title>
-        <video:description>Case24 results Bahador Beigomi reinforcement learning with tactile sensing</video:description>
-        <video:content_loc>https://baha2r.github.io/images/case24/w_tactile_1.mp4</video:content_loc>
-    </video:video>
+    
     
 </urlset>
