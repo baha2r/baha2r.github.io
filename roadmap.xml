@@ -36,11 +36,25 @@
         <priority>0.7</priority>
     </url>
 
-    <url>
+    <!-- <url>
         <loc>https://github.com/baha2r/robotiq3f_py</loc>
         <lastmod>2024-10-04</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
-    </url>
+    </url> -->
+
+    <video:video>
+        <video:thumbnail_loc>https://baha2r.github.io/images/robotiq3f_py.png</video:thumbnail_loc>
+        <video:title>robotiq3f_py</video:title>
+        <video:description>Python package for Robotiq 3F gripper</video:description>
+        <video:content_loc>
+    </video:video>
+
+    <video:video>
+        <video:thumbnail_loc>https://baha2r.github.io/images/case24/w_tactile_1.mp4</video:thumbnail_loc>
+        <video:title>Case24 results Bahador Beigomi</video:title>
+        <video:description>Case24 results Bahador Beigomi reinforcement learning with tactile sensing</video:description>
+        <video:content_loc>https://baha2r.github.io/images/case24/w_tactile_1.mp4</video:content_loc>
+    </video:video>
     
 </urlset>
