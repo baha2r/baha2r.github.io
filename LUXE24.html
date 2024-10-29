@@ -3,10 +3,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="description"
-        content="Towards Real-World Efficiency: Domain Randomization in Reinforcement Learning for Pre-Capture of Free-Floating Moving Targets by Autonomous Robots _ International Conference on Robotics and Automation (ICRA) 2024, Yokohama, Japan, Space Robotics, Grasping, Reinforcement Learning, Robotiq 3F Gripper, Fanuc LR Mate 20iD/25, Camera, Force-Torque Sensor, Zero Gravity, Microgravity, Soft Actor-Critic, Off-Policy, Reward Function, Pre-Grasping, Approach Task, Real-World, Simulated, Experiments, Bahador Beigomi, Zheng H. Zhu, York University, Toronto, Canada, ORCID">
-  <meta name="keywords" content="ICRA, Robotics, Grasping, Yokohama, Japan, Reinforcement Learning, Robotiq 3F Gripper, Fanuc LR Mate 20iD/25, Camera, Force-Torque Sensor, Zero Gravity, Microgravity, Soft Actor-Critic, Off-Policy, Reward Function, Pre-Grasping, Approach Task, Real-World, Simulated, Experiments, Bahador Beigomi, Zheng H. Zhu, York University, Toronto, Canada, ORCID">
+        content="Curriculum-based Reinforcement Learning to Pre-Grasp Floating Target _ IEEE Transaction on Robotics (TRO) _ International Conference on Robotics and Automation (ICRA) 2024, Yokohama, Japan, Space Robotics, Grasping, Reinforcement Learning, Robotiq 3F Gripper, Fanuc LR Mate 20iD/25, Camera, Force-Torque Sensor, Zero Gravity, Microgravity, Soft Actor-Critic, Off-Policy, Reward Function, Pre-Grasping, Approach Task, Real-World, Simulated, Experiments, Bahador Beigomi, Zheng H. Zhu, York University, Toronto, Canada, ORCID">
+  <meta name="keywords" content="IEEE Transaction on Robotics (TRO), ICRA, Robotics, Grasping, Yokohama, Japan, Reinforcement Learning, Robotiq 3F Gripper, Fanuc LR Mate 20iD/25, Camera, Force-Torque Sensor, Zero Gravity, Microgravity, Soft Actor-Critic, Off-Policy, Reward Function, Pre-Grasping, Approach Task, Real-World, Simulated, Experiments, Bahador Beigomi, Zheng H. Zhu, York University, Toronto, Canada, ORCID">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Towards Real-World Efficiency: Domain Randomization in Reinforcement Learning for Pre-Capture of Free-Floating Moving Targets by Autonomous Robots _ International Conference on Robotics and Automation (ICRA) 2024, Yokohama, Japan, Space Robotics, Grasping, Reinforcement Learning, Robotiq 3F Gripper, Fanuc LR Mate 20iD/25, Camera, Force-Torque Sensor, Zero Gravity, Microgravity, Soft Actor-Critic, Off-Policy, Reward Function, Pre-Grasping, Approach Task, Real-World, Simulated, Experiments, Bahador Beigomi, Zheng H. Zhu, York University, Toronto, Canada, ORCID </title>
+  <title>Curriculum-based Reinforcement Learning to Pre-Grasp Floating Target _ IEEE Transaction on Robotics (TRO) _ International Conference on Robotics and Automation (ICRA) 2024, Yokohama, Japan, Space Robotics, Grasping, Reinforcement Learning, Robotiq 3F Gripper, Fanuc LR Mate 20iD/25, Camera, Force-Torque Sensor, Zero Gravity, Microgravity, Soft Actor-Critic, Off-Policy, Reward Function, Pre-Grasping, Approach Task, Real-World, Simulated, Experiments, Bahador Beigomi, Zheng H. Zhu, York University, Toronto, Canada, ORCID </title>
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
@@ -32,7 +32,7 @@
   <link rel="stylesheet"
         href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="./static/css/index.css">
-  <link rel="icon" type="image/png" href="images/ICRA2024_Logo.webp">
+  <link rel="icon" type="image/png" href="images/IEEE_TRO_logo.png">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script defer src="./static/js/fontawesome.all.min.js"></script>
@@ -88,13 +88,31 @@
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">Towards Real-World Efficiency: Domain Randomization in Reinforcement Learning for Pre-Capture of Free-Floating Moving Targets by Autonomous Robots</h1>
+          <h1 class="title is-1 publication-title"> Curriculum-based Reinforcement Learning to Pre-Grasp Floating Target </h1>
           <div class="is-size-5 publication-authors">
             <span class="author-block">
               <a href="https://baha2r.github.io/"> Bahador Beigomi</a><sup>1</sup>
               <a href="https://orcid.org/0000-0001-5646-2771" target="_blank">
                 <img src="https://orcid.org/sites/default/files/images/orcid_16x16.png" alt="ORCID iD" />
               </a>
+            </span>
+            <span class="author-block">
+                <a href="https://github.com/Mohatashem"> Mohatashem Reyaz Makhdoomi</a><sup>2</sup>
+                <a href="https://orcid.org/0000-0003-1739-5507" target="_blank">
+                  <img src="https://orcid.org/sites/default/files/images/orcid_16x16.png" alt="ORCID iD" />
+                </a>
+            </span>
+            <span class="author-block">
+                <a href="https://carolmartinez.github.io/"> Carol Martinez</a><sup>2</sup>
+                <a href="https://orcid.org/0000-0003-3040-6119" target="_blank">
+                  <img src="https://orcid.org/sites/default/files/images/orcid_16x16.png" alt="ORCID iD" />
+                </a>
+            </span>
+            <span class="author-block">
+                <a href="https://www.uni.lu/snt-en/people/miguel-angel-olivares-mendez/"> Miguel A. Olivares-Mendez</a><sup>2</sup>
+                <a href="https://orcid.org/0000-0001-8824-3231" target="_blank">
+                  <img src="https://orcid.org/sites/default/files/images/orcid_16x16.png" alt="ORCID iD" />
+                </a>
             </span>
             <span class="author-block">
               <a href="https://www.yorku.ca/gzhu/">Zheng H. (George) Zhu</a><sup>1</sup>
@@ -106,22 +124,25 @@
 
           <div class="is-size-5 publication-authors">
             <span class="author-block"><sup>1</sup>York University</span>
+            <span class="author-block"><sup>2</sup>University of Luxembourg</span>
           </div>
 
           <div class="column has-text-centered">
             <div class="publication-links">
               <!-- IEEE Link. -->
               <span class="link-block">
-                <a href="https://ieeexplore.ieee.org/document/10610017"
+                <!-- <a href="https://ieeexplore.ieee.org/document/10610017" -->
+                <a href=""
                    class="external-link button is-normal is-rounded is-dark">
                    <span class="icon">
-                    <img src="images/ICRA2024-Simple-Logo.png" alt="IEEE Logo" style="width:24px; height:auto;">
+                    <img src="images/IEEE_TRO_logo.png" alt="IEEE Logo" style="width:24px; height:auto;">
                   </span>                
                   <span>Paper</span>
                 </a>
               </span>
               <span class="link-block">
-                <a href="https://arxiv.org/abs/2406.06460"
+                <!-- <a href="https://arxiv.org/abs/2406.06460" -->
+                <a href=""
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="ai ai-arxiv"></i>
@@ -131,7 +152,8 @@
               </span>
               <!-- Video Link. -->
               <span class="link-block">
-                <a href="https://youtu.be/am2wNMko47o"
+                <!-- <a href="https://www.youtube.com/watch?v=MrKrnHhk8IA" -->
+                <a href=""
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fab fa-youtube"></i>
@@ -141,7 +163,8 @@
               </span>
               <!-- Code Link. -->
               <span class="link-block">
-                <a href="https://github.com/baha2r/Fanuc_Robotiq_Grasp"
+                <!-- <a href="https://github.com/baha2r/Fanuc_Robotiq_Grasp" -->
+                <a href=""
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fab fa-github"></i>
@@ -168,6 +191,7 @@
   </div>
 </section>
 
+
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
@@ -184,6 +208,58 @@
   </div>
 </section>
 
+<!-- scrolling vids -->
+<section class="hero is-light is-small">
+    <div class="hero-body">
+      <div class="container">
+        <div class="content has-text-justified">
+          <p>
+            Six different videos showing the robot's behavior after training. Some is equipped with tactile feedback, while others are not. 
+            The importance of tactile feedback is evident in the robot's behavior to avoid collisions and position itself correctly for the soft-capture phase.
+          </p>
+        </div>
+        <div id="results-carousel" class="carousel results-carousel">
+          <div class="item item-steve">
+            <video poster="" id="steve" autoplay controls muted loop playsinline height="100%">
+              <source src="images/case24/w_tactile_1.mp4" type="video/mp4">
+            </video>
+            <p class="video-description">Tactile feedback enabled - Example 1</p>
+          </div>
+          <div class="item item-chair-tp">
+            <video poster="" id="chair-tp" autoplay controls muted loop playsinline height="100%">
+              <source src="images/case24/wo_tactile_5.mp4" type="video/mp4">
+            </video>
+            <p class="video-description">No tactile feedback - Example 2</p>
+          </div>
+          <div class="item item-shiba">
+            <video poster="" id="shiba" autoplay controls muted loop playsinline height="100%">
+              <source src="images/case24/w_tactile_3.mp4" type="video/mp4">
+            </video>
+            <p class="video-description">Tactile feedback enabled - Example 3</p>
+          </div>
+          <div class="item item-fullbody">
+            <video poster="" id="fullbody" autoplay controls muted loop playsinline height="100%">
+              <source src="images/case24/wo_tactile_7.mp4" type="video/mp4">
+            </video>
+            <p class="video-description">No tactile feedback - Example 4</p>
+          </div>
+          <div class="item item-fullbody">
+            <video poster="" id="fullbody" autoplay controls muted loop playsinline height="100%">
+              <source src="images/case24/w_tactile_5.mp4" type="video/mp4">
+            </video>
+            <p class="video-description">Tactile feedback enabled - Example 5</p>
+          </div>
+          <div class="item item-fullbody">
+            <video poster="" id="fullbody" autoplay controls muted loop playsinline height="100%">
+              <source src="images/case24/wo_tactile_8.mp4" type="video/mp4">
+            </video>
+            <p class="video-description">No tactile feedback - Example 6</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
 <section class="section">
   <div class="container is-max-desktop">
     <!-- Abstract. -->
@@ -192,20 +268,18 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            In this research, we introduce a deep reinforcement learning-based control approach to address the intricate challenge of the robotic pre-grasping 
-            phase under microgravity conditions. Leveraging reinforcement learning eliminates the necessity for manual feature design, therefore simplifying 
-            the problem and empowering the robot to learn pre-grasping policies through trial and error.  
+            Pre-positioning a robotic gripper relative to a free-floating, moving target in 6-DoF poses significant challenges, especially when both translation and rotation are involved. 
+            Precise pre-positioning is critical for successful grasping, as deviations from the optimal pose may result in missed grasp opportunities or collisions. 
           </p>
           <p>
-            Our methodology incorporates an off-policy 
-            reinforcement learning framework, employing the soft actor-critic technique to enable the gripper to proficiently approach a free-floating 
-            moving object, ensuring optimal pre-grasp success. For effective learning of the pre-grasping approach task, we developed a reward function that 
-            offers the agent clear and insightful feedback. Our case study examines a pre-grasping task where a Robotiq 3F gripper is required to navigate 
-            towards a free-floating moving target, pursue it, and subsequently position itself at the desired pre-grasp location.
+            This work addresses these challenges by leveraging reinforcement learning with curriculum learning to enhance both the efficiency and adaptability of the robotic agent in dynamic environments. 
+            Curriculum learning is used to incrementally increase task complexity, enabling the agent to adapt to unforeseen conditions while maintaining precise control. 
+            The proposed approach uses a Soft Actor-Critic algorithm with deterministic policy output, first trained in the PyBullet simulation environment with domain randomization to mitigate sim-to-real transfer issues. 
+            The trained policy is then transferred to a physical robot to perform dynamic pre-positioning tasks. 
           </p>
           <p>
-            We assessed our approach 
-            through a series of experiments in both simulated and real-world environments.
+            Our results demonstrate that this method enables the robotic gripper to accurately track and maintain the correct pose relative to a 6-DoF moving and rotating target, ensuring collision-free pre-positioning, a crucial precursor to grasping. 
+            More detailed results and videos are available at GitHub.
           </p>
         </div>
       </div>
@@ -346,7 +420,7 @@
   <div class="container is-max-desktop content">
     <h2 class="title">BibTeX</h2>
     <pre><code>@INPROCEEDINGS{10610017,
-      author={Beigomi, Bahador and Zhu, Zheng H.},
+      <!-- author={Beigomi, Bahador and Zhu, Zheng H.},
       booktitle={2024 IEEE International Conference on Robotics and Automation (ICRA)}, 
       title={Towards Real-World Efficiency: Domain Randomization in Reinforcement Learning for Pre-Capture of Free-Floating Moving Targets by Autonomous Robots}, 
       year={2024},
@@ -354,7 +428,7 @@
       number={},
       pages={11753-11759},
       keywords={Training;Target tracking;Source coding;Reinforcement learning;Robustness;Sensors;Grippers},
-      doi={10.1109/ICRA57147.2024.10610017}}
+      doi={10.1109/ICRA57147.2024.10610017}} -->
 </code></pre>
   </div>
 </section>
