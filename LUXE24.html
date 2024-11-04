@@ -374,46 +374,60 @@
     <!-- Curriculum complexity levels. -->
     <div class="columns is-centered">
       <div class="column is-full-width">
-        <h2 class="title is-3"></h2>
+        <!-- <h2 class="title is-3"></h2> -->
         <h3 class="title is-4">Curriculum Complexity Levels</h3>
         <div class="content has-text-justified">
           <p>
-            Four hierarchical complexity levels are designed to train the agent in a simulated environment to cope with tilted rotating targets.
+            Standard reinforcement learning algorithms often struggle to learn complex tasks directly from high-dimensional observations. That is why we use
+            curriculum learning to incrementally increase the task complexity and help the agent adapt to unforeseen conditions while maintaining precise
+            control over the gripper's motion.
+            Four hierarchical complexity levels are designed to train the agent in a simulated environment to cope with tilted rotating target.
             The agent is trained with a curriculum learning approach to incrementally increase the task complexity.
             The task difficulty at each level is parameterized by the target’s orientation \( \psi \) and angular velocity \( \omega \), both of which 
-            increase exponentially across the four levels: \( \psi _i \in [-\pi \cdot \frac{2^{i-1}}{16} , \pi \cdot \frac{2^{i-1}}{16}] \) and \( \omega _i \in [-\pi \cdot \frac{2^{i-1}}{8} , \pi \cdot \frac{2^{i-1}}{8}] \).
+            increase exponentially across the four levels.
+            <!-- : \( \psi _i \in [-\pi \cdot \frac{2^{i-1}}{16} , \pi \cdot \frac{2^{i-1}}{16}] \) and \( \omega _i \in [-\pi \cdot \frac{2^{i-1}}{8} , \pi \cdot \frac{2^{i-1}}{8}] \). -->
           </p>        
         </div>
-        <div class="columns is-vcentered interpolation-panel">
+        <div class="columns is-vcentered interpolation-panel" >
           <div class="column is-3 has-text-centered">
-            <img src="images/position_reward.png"
-                 class="interpolation-image"
-                 alt="Interpolate start reference image."/>
-            <p>position correction </p>
-          </div>
+            <div style="display: inline-block; clip-path: inset(0 15% 0 15%); ">
+              <video id="dollyzoom" autoplay controls muted loop playsinline style="width: 100%;border-radius: 100%;">
+                <source src="images/Luxe24/cl_level/L1.mp4" type="video/mp4">
+              </video>
+            </div>
+            <p>\( L1 \)</p>
+          </div> 
+          <div class="column is-3 has-text-centered" >
+            <div style="display: inline-block; clip-path: inset(0 15% 0 15%); ">
+              <video id="dollyzoom" autoplay controls muted loop playsinline style="width: 100%;border-radius: 100%;">
+                <source src="images/Luxe24/cl_level/L2.mp4" type="video/mp4">
+              </video>
+            </div>
+            <p>\( L2 \)</p>
+          </div> 
           <div class="column is-3 has-text-centered">
-            <img src="images/orientation_reward.png"
-                 class="interpolation-image"
-                 alt="Interpolation end reference image."/>
-            <p class="is-bold">orientation correction</p>
-          </div>
+            <div style="display: inline-block; clip-path: inset(0 15% 0 15%); ">
+              <video id="dollyzoom" autoplay controls muted loop playsinline style="width: 100%;border-radius: 100%;">
+                <source src="images/Luxe24/cl_level/L3.mp4" type="video/mp4">
+              </video>
+            </div>
+            <p>\( L3 \)</p>
+          </div> 
           <div class="column is-3 has-text-centered">
-            <img src="images/top_reward.png"
-                 class="interpolation-image"
-                 alt="Interpolation end reference image."/>
-            <p class="is-bold">topology encouragement</p>
-          </div>
-          <div class="column is-3 has-text-centered">
-            <img src="images/contact_reward.png"
-                 class="interpolation-image"
-                 alt="Interpolation end reference image."/>
-            <p class="is-bold">contact penalization</p>
-          </div>
+            <div style="display: inline-block; clip-path: inset(0 15% 0 15%); ">
+              <video id="dollyzoom" autoplay controls muted loop playsinline style="width: 100%;border-radius: 100%;">
+                <source src="images/Luxe24/cl_level/L4.mp4" type="video/mp4">
+              </video>
+            </div>
+            <p>\( L4 \)</p>
+          </div>  
         </div>
         <br/>
       </div>
     </div>
+    <!-- Curriculum complexity levels. -->
 
+    <!--/ Two videos. -->
     <div class="columns is-centered">
       <!-- Visual Effects. -->
       <div class="column">
@@ -431,7 +445,7 @@
         </div>
       </div>
       <div class="column">
-        <h2 class="title is-3">......................................................</h2>
+        <h2 class="title is-3">..........................................</h2>
         <div class="columns is-centered">
           <div class="column content">
             <p>
@@ -524,6 +538,7 @@
 </section>
 
 
+
 <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
     <h2 class="title">BibTeX</h2>
@@ -540,7 +555,6 @@
 </code></pre>
   </div>
 </section>
-
 
 <footer class="footer">
   <div class="container">    
