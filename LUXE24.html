@@ -3,10 +3,11 @@
 <head>
   <meta charset="utf-8">
   <meta name="description"
-        content="Curriculum-based Reinforcement Learning to Pre-Grasp Floating Target _ IEEE Transaction on Robotics (TRO) _ International Conference on Robotics and Automation (ICRA) 2024, Yokohama, Japan, Space Robotics, Grasping, Reinforcement Learning, Robotiq 3F Gripper, Fanuc LR Mate 20iD/25, Camera, Force-Torque Sensor, Zero Gravity, Microgravity, Soft Actor-Critic, Off-Policy, Reward Function, Pre-Grasping, Approach Task, Real-World, Simulated, Experiments, Bahador Beigomi, Zheng H. Zhu, York University, Toronto, Canada, ORCID">
-  <meta name="keywords" content="IEEE Transaction on Robotics (TRO), ICRA, Robotics, Grasping, Yokohama, Japan, Reinforcement Learning, Robotiq 3F Gripper, Fanuc LR Mate 20iD/25, Camera, Force-Torque Sensor, Zero Gravity, Microgravity, Soft Actor-Critic, Off-Policy, Reward Function, Pre-Grasping, Approach Task, Real-World, Simulated, Experiments, Bahador Beigomi, Zheng H. Zhu, York University, Toronto, Canada, ORCID">
+        content="Curriculum-based Reinforcement Learning to Pre-Grasp Floating Target _ IEEE Transaction on Robotics (TRO) _ International Conference on Robotics and Automation (ICRA) 2024, Yokohama, Japan, Space Robotics, Grasping, Reinforcement Learning, Robotiq 3F Gripper, Universal Robots UR-10 UR-5, Camera, Force-Torque Sensor, Zero Gravity, Microgravity, Soft Actor-Critic, Off-Policy, Reward Function, Pre-Grasping, Approach Task, Real-World, Simulated, Experiments, Bahador Beigomi, Zheng H. Zhu, York University, Toronto, Canada, ORCID">
+  <meta name="keywords" content="IEEE Transaction on Robotics (TRO), ICRA, Robotics, Grasping, Yokohama, Japan, Reinforcement Learning, Robotiq 3F Gripper, Universal Robots UR-10 UR-5, Camera, Force-Torque Sensor, Zero Gravity, Microgravity, Soft Actor-Critic, Off-Policy, Reward Function, Pre-Grasping, Approach Task, Real-World, Simulated, Experiments, Bahador Beigomi, Zheng H. Zhu, York University, Toronto, Canada, ORCID">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Curriculum-based Reinforcement Learning to Pre-Grasp Floating Target _ IEEE Transaction on Robotics (TRO) _ International Conference on Robotics and Automation (ICRA) 2024, Yokohama, Japan, Space Robotics, Grasping, Reinforcement Learning, Robotiq 3F Gripper, Fanuc LR Mate 20iD/25, Camera, Force-Torque Sensor, Zero Gravity, Microgravity, Soft Actor-Critic, Off-Policy, Reward Function, Pre-Grasping, Approach Task, Real-World, Simulated, Experiments, Bahador Beigomi, Zheng H. Zhu, York University, Toronto, Canada, ORCID </title>
+  
+  <title>Curriculum-based Reinforcement Learning to Pre-Grasp Floating Target _ IEEE Transaction on Robotics (TRO) _ International Conference on Robotics and Automation (ICRA) 2024, Yokohama, Japan, Space Robotics, Grasping, Reinforcement Learning, Robotiq 3F Gripper, Universal Robots UR-10 UR-5, Camera, Force-Torque Sensor, Zero Gravity, Microgravity, Soft Actor-Critic, Off-Policy, Reward Function, Pre-Grasping, Approach Task, Real-World, Simulated, Experiments, Bahador Beigomi, Zheng H. Zhu, York University, Toronto, Canada, ORCID </title>
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
@@ -39,6 +40,7 @@
   <script src="./static/js/bulma-carousel.min.js"></script>
   <script src="./static/js/bulma-slider.min.js"></script>
   <script src="./static/js/index.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
 <body>
 
@@ -196,7 +198,7 @@
   <div class="container is-max-desktop">
     <div class="hero-body">
       <video id="teaser" autoplay muted loop playsinline height="100%">
-        <source src="images/pre_grasp_video_with_figures.mov"
+        <source src="images/Luxe24/T10.mp4"
                 type="video/mp4">
       </video>
       <!-- <h2 class="subtitle has-text-centered">
@@ -214,46 +216,48 @@
       <div class="container">
         <div class="content has-text-justified">
           <p>
-            Six different videos showing the robot's behavior after training. Some is equipped with tactile feedback, while others are not. 
-            The importance of tactile feedback is evident in the robot's behavior to avoid collisions and position itself correctly for the soft-capture phase.
+            Several test have been conducted to evaluate the performance of the proposed approach in real-world scenarios. In the following videos, 
+            the robot arm approaches a floating target and moves to the pre-grasp position. The target is moving and rotating randomly in the space.
+            All of the required actions to place the gripper in the pre-grasp position are predicted from the trained agent, receiving all the 
+            necessary observations from sensors like optitrack. 
           </p>
         </div>
         <div id="results-carousel" class="carousel results-carousel">
           <div class="item item-steve">
             <video poster="" id="steve" autoplay controls muted loop playsinline height="100%">
-              <source src="images/case24/w_tactile_1.mp4" type="video/mp4">
+              <source src="images/Luxe24/T01.mp4" type="video/mp4">
             </video>
-            <p class="video-description">Tactile feedback enabled - Example 1</p>
+            <p class="video-description">stationary Target - Example 1</p>
           </div>
           <div class="item item-chair-tp">
             <video poster="" id="chair-tp" autoplay controls muted loop playsinline height="100%">
-              <source src="images/case24/wo_tactile_5.mp4" type="video/mp4">
+              <source src="images/Luxe24/T02.mp4" type="video/mp4">
             </video>
-            <p class="video-description">No tactile feedback - Example 2</p>
+            <p class="video-description">Linear motion - Example 2</p>
           </div>
           <div class="item item-shiba">
             <video poster="" id="shiba" autoplay controls muted loop playsinline height="100%">
-              <source src="images/case24/w_tactile_3.mp4" type="video/mp4">
+              <source src="images/Luxe24/T03.mp4" type="video/mp4">
             </video>
-            <p class="video-description">Tactile feedback enabled - Example 3</p>
+            <p class="video-description">Linear motion stopped at the end - Example 3</p>
           </div>
           <div class="item item-fullbody">
             <video poster="" id="fullbody" autoplay controls muted loop playsinline height="100%">
-              <source src="images/case24/wo_tactile_7.mp4" type="video/mp4">
+              <source src="images/Luxe24/T07.mp4" type="video/mp4">
             </video>
-            <p class="video-description">No tactile feedback - Example 4</p>
+            <p class="video-description">Tilted target wo ang vel - Example 4</p>
           </div>
           <div class="item item-fullbody">
             <video poster="" id="fullbody" autoplay controls muted loop playsinline height="100%">
-              <source src="images/case24/w_tactile_5.mp4" type="video/mp4">
+              <source src="images/Luxe24/T11.mp4" type="video/mp4">
             </video>
-            <p class="video-description">Tactile feedback enabled - Example 5</p>
+            <p class="video-description">Tilted target with ang vel - Example 5</p>
           </div>
           <div class="item item-fullbody">
             <video poster="" id="fullbody" autoplay controls muted loop playsinline height="100%">
-              <source src="images/case24/wo_tactile_8.mp4" type="video/mp4">
+              <source src="images/Luxe24/T17.mp4" type="video/mp4">
             </video>
-            <p class="video-description">No tactile feedback - Example 6</p>
+            <p class="video-description">Tilted target with ang vel - Example 6</p>
           </div>
         </div>
       </div>
@@ -286,38 +290,142 @@
     </div>
     <!--/ Abstract. -->
 
+    <!-- Simulatin environment -->
+    <section class="hero is-light is-small">
+      <div class="hero-body">
+        <div class="container">
+          <h2 class="title is-3 has-text-centered">Simulation Scenarios</h2>
+          <div class="content has-text-justified">
+            <p>
+              To train our agent in a simulated environment, we used PyBullet, a physics engine that provides a realistic simulation of the robot
+               and the micro-gravity environment.
+
+            </p>
+          </div>
+          <div class="publication-image has-text-centered">
+            <video src="images/Luxe24/simulations/Presentation3.mp4" style="max-width:100%; height:auto;" autoplay muted loop controls></video>
+          </div>          
+          
+          <div id="results-carousel" class="carousel results-carousel">
+            <div class="item item-steve">
+              <video poster="" id="steve" autoplay controls muted loop playsinline height="100%">
+                <source src="images/Luxe24/simulations/T00.mp4" type="video/mp4">
+              </video>
+              <p class="video-description">stationary Target - Example 1</p>
+            </div>
+            <div class="item item-chair-tp">
+              <video poster="" id="chair-tp" autoplay controls muted loop playsinline height="100%">
+                <source src="images/Luxe24/simulations/T03.mp4" type="video/mp4">
+              </video>
+              <p class="video-description">Linear motion - Example 2</p>
+            </div>
+            <div class="item item-shiba">
+              <video poster="" id="shiba" autoplay controls muted loop playsinline height="100%">
+                <source src="images/Luxe24/simulations/T02.mp4" type="video/mp4">
+              </video>
+              <p class="video-description">Linear motion stopped at the end - Example 3</p>
+            </div>
+            <div class="item item-fullbody">
+              <video poster="" id="fullbody" autoplay controls muted loop playsinline height="100%">
+                <source src="images/Luxe24/simulations/T04.mp4" type="video/mp4">
+              </video>
+              <p class="video-description">Tilted target wo ang vel - Example 4</p>
+            </div>
+            <div class="item item-fullbody">
+              <video poster="" id="fullbody" autoplay controls muted loop playsinline height="100%">
+                <source src="images/Luxe24/simulations/T06.mp4" type="video/mp4">
+              </video>
+              <p class="video-description">Tilted target with ang vel - Example 5</p>
+            </div>
+            <div class="item item-fullbody">
+              <video poster="" id="fullbody" autoplay controls muted loop playsinline height="100%">
+                <source src="images/Luxe24/simulations/T07.mp4" type="video/mp4">
+              </video>
+              <p class="video-description">Tilted target with ang vel - Example 6</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--/ Simulatin environment -->
+
+
     <!-- Paper image with explanation. -->
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
         <h2 class="title is-3">Lab Setup</h2>
         <div class="publication-image">
-          <img src="images/Lab_connection.png" alt="Short description of the image" style="max-width:100%; height:auto;">
-          <p class="image-explanation">To test and implement our approach, we used a Fanuc LR Mate 20iD/25 robot arm with a Robotiq 3F gripper. 
-            The robot arm was equipped with a camera to detect the target object and a force-torque sensor to provide feedback to simulate zero gravity conditions.
+          <img src="images/Luxe24/The-ZeroG-lab-facility-at-University-of-Luxembourg_W640.jpg" alt="Short description of the image" style="max-width:100%; height:auto;">
+          <p class="image-explanation">To test and implement our approach, we used Zero-G lab facilities in Luxembourg. Equipped with two 
+            Universal Robots UR10e robotic arms mounted on Cobotracks rails, the system extends the workspace of the robotic arms for 
+            emulating spacecraft motion, Zero-G Lab created a established and unique hardware-in-the-loop (HIL) setup to implement and test 
+            the trained agent in real-world setups. The system is equipped with a Robotiq 3F gripper, optitrack cameras, and a well-calibrated motion control system 
+            completely built on Robotics Operating System (ROS) and Python. The system is capable of simulating microgravity conditions. 
           </p>
         </div>
       </div>
     </div>
     <!--/ Paper image with explanation. -->
-
   </div>
 </section>
 
-
 <section class="section">
   <div class="container is-max-desktop">
+    <!-- Curriculum complexity levels. -->
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3"></h2>
+        <h3 class="title is-4">Curriculum Complexity Levels</h3>
+        <div class="content has-text-justified">
+          <p>
+            Four hierarchical complexity levels are designed to train the agent in a simulated environment to cope with tilted rotating targets.
+            The agent is trained with a curriculum learning approach to incrementally increase the task complexity.
+            The task difficulty at each level is parameterized by the target’s orientation \( \psi \) and angular velocity \( \omega \), both of which 
+            increase exponentially across the four levels: \( \psi _i \in [-\pi \cdot \frac{2^{i-1}}{16} , \pi \cdot \frac{2^{i-1}}{16}] \) and \( \omega _i \in [-\pi \cdot \frac{2^{i-1}}{8} , \pi \cdot \frac{2^{i-1}}{8}] \).
+          </p>        
+        </div>
+        <div class="columns is-vcentered interpolation-panel">
+          <div class="column is-3 has-text-centered">
+            <img src="images/position_reward.png"
+                 class="interpolation-image"
+                 alt="Interpolate start reference image."/>
+            <p>position correction </p>
+          </div>
+          <div class="column is-3 has-text-centered">
+            <img src="images/orientation_reward.png"
+                 class="interpolation-image"
+                 alt="Interpolation end reference image."/>
+            <p class="is-bold">orientation correction</p>
+          </div>
+          <div class="column is-3 has-text-centered">
+            <img src="images/top_reward.png"
+                 class="interpolation-image"
+                 alt="Interpolation end reference image."/>
+            <p class="is-bold">topology encouragement</p>
+          </div>
+          <div class="column is-3 has-text-centered">
+            <img src="images/contact_reward.png"
+                 class="interpolation-image"
+                 alt="Interpolation end reference image."/>
+            <p class="is-bold">contact penalization</p>
+          </div>
+        </div>
+        <br/>
+      </div>
+    </div>
+
     <div class="columns is-centered">
       <!-- Visual Effects. -->
       <div class="column">
         <div class="content">
-          <h2 class="title is-3">Real World Implementation</h2>
+          <h2 class="title is-3">Off-Script Scenarios</h2>
           <p>
-            In both scenarios, a randomly positioned floating target is approached by a Fanuc robot arm with a Robotiq 3F gripper. 
-            Equipped with a camera and using the pre-trained YOLOX algorithm, 
-            the robot accurately identifies the target’s grasping section and moves to the pre-grasp position.
+            Since the agent is trained in a simulated environment with domain randomization, it is expected to fail in some 
+            real-world scenarios. As shown in the following videos, the agent occasionally fails to predict the correct actions 
+            needed to place the gripper in the pre-grasp position, but it still manages to get in contact with the target object.
           </p>
           <video id="dollyzoom" autoplay controls muted loop playsinline height="100%">
-            <source src="images/icra24/TEST5.mp4"
+            <source src="images/Luxe24/T13.mp4"
                     type="video/mp4">
           </video>
         </div>
@@ -327,12 +435,12 @@
         <div class="columns is-centered">
           <div class="column content">
             <p>
-              All the required actions to place the gripper in pre-grasp position is predicted from the trained agent, 
-              receiving all the necessary observations from sensors like camera and tactile sensors.
-              For Safety reasons, the target is placed randomly in stationary position. 
+              The agent might be able to recover from the failure, and continue the task, like in simulation environment, 
+              but because of the safety reasons, the task is stopped right after the contact happens.
+              The main reason for the failure is the agent is not trained with the exact same conditions as the real-world.
             </p>
             <video id="matting-video" autoplay controls muted loop playsinline height="100%">
-              <source src="images/icra24/TEST2.mp4"
+              <source src="images/Luxe24/T12.mp4"
                       type="video/mp4">
             </video>
           </div>
