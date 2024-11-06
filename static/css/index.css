@@ -140,13 +140,13 @@ body {
 
 
 .interpolation-panel {
-  background: #f5f5f5;
-  border-radius: 10px;
+  background: #ffffff;
+  border-radius: 00px;
 }
 
 .interpolation-panel .interpolation-image {
   width: 100%;
-  border-radius: 5px;
+  border-radius: 0px;
 }
 
 .interpolation-video-column {
